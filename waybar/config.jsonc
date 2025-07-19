@@ -17,7 +17,6 @@
     "clock#simpleclock",
     "tray",
     "custom/notification",
-    "custom/power",
   ],
 
   "custom/waybar-scrolling-mpris": {
@@ -86,11 +85,6 @@
   "custom/sep": {
     "format": "|",
     "tooltip": false,
-  },
-  "custom/power": {
-    "tooltip": false,
-    "on-click": "wleave -p layer-shell &",
-    "format": "⏻",
   },
   "custom/notification": {
     "escape": true,

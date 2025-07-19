@@ -49,10 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-
 local package_path_str = "/home/matteo/.cache/nvim/packer_hererocks/2.1.1748459687/share/lua/5.1/?.lua;/home/matteo/.cache/nvim/packer_hererocks/2.1.1748459687/share/lua/5.1/?/init.lua;/home/matteo/.cache/nvim/packer_hererocks/2.1.1748459687/lib/luarocks/rocks-5.1/?.lua;/home/matteo/.cache/nvim/packer_hererocks/2.1.1748459687/lib/luarocks/rocks-5.1/?/init.lua"
 local install_cpath_pattern = "/home/matteo/.cache/nvim/packer_hererocks/2.1.1748459687/lib/lua/5.1/?.so"
-
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -78,7 +76,7 @@ time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
   ["Comment.nvim"] = {
     loaded = true,
-    path = "/home/kleefuchs/.local/share/nvim/site/pack/packer/start/Comment.nvim",
+    path = "/home/matteo/.local/share/nvim/site/pack/packer/start/Comment.nvim",
     url = "https://github.com/numToStr/Comment.nvim"
   },
   LuaSnip = {
@@ -87,11 +85,11 @@ _G.packer_plugins = {
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
   ["alpha-nvim"] = {
-    config = { "\27LJ\2\nï¿½\1\0\0\4\0\b\0\r6\0\0\0'\2\1\0B\0\2\0029\1\2\0'\2\4\0=\2\3\0016\1\0\0'\3\5\0B\1\2\0029\1\6\0019\3\a\0B\1\2\1K\0\1\0\vconfig\nsetup\nalpha\rdevicons\rprovider\15file_icons\26alpha.themes.startify\frequire\0" },
+    config = { "\27LJ\2\n‰\1\0\0\4\0\b\0\r6\0\0\0'\2\1\0B\0\2\0029\1\2\0'\2\4\0=\2\3\0016\1\0\0'\3\5\0B\1\2\0029\1\6\0019\3\a\0B\1\2\1K\0\1\0\vconfig\nsetup\nalpha\rdevicons\rprovider\15file_icons\26alpha.themes.startify\frequire\0" },
     loaded = true,
-    path = "/home/kleefuchs/.local/share/nvim/site/pack/packer/start/alpha-nvim",
+    path = "/home/matteo/.local/share/nvim/site/pack/packer/start/alpha-nvim",
     url = "https://github.com/goolord/alpha-nvim"
-},
+  },
   catppuccin = {
     loaded = true,
     path = "/home/matteo/.local/share/nvim/site/pack/packer/start/catppuccin",
@@ -129,7 +127,7 @@ _G.packer_plugins = {
   },
   ["feline.nvim"] = {
     loaded = true,
-    path = "/home/kleefuchs/.local/share/nvim/site/pack/packer/start/feline.nvim",
+    path = "/home/matteo/.local/share/nvim/site/pack/packer/start/feline.nvim",
     url = "https://github.com/famiu/feline.nvim"
   },
   ["friendly-snippets"] = {
@@ -149,7 +147,7 @@ _G.packer_plugins = {
   },
   ["lualine.nvim"] = {
     loaded = true,
-    path = "/home/kleefuchs/.local/share/nvim/site/pack/packer/start/lualine.nvim",
+    path = "/home/matteo/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
   ["mason-lspconfig.nvim"] = {
@@ -169,27 +167,27 @@ _G.packer_plugins = {
   },
   ["mini.clue"] = {
     loaded = true,
-    path = "/home/kleefuchs/.local/share/nvim/site/pack/packer/start/mini.clue",
+    path = "/home/matteo/.local/share/nvim/site/pack/packer/start/mini.clue",
     url = "https://github.com/echasnovski/mini.clue"
   },
   ["mini.cursorword"] = {
     loaded = true,
-    path = "/home/kleefuchs/.local/share/nvim/site/pack/packer/start/mini.cursorword",
+    path = "/home/matteo/.local/share/nvim/site/pack/packer/start/mini.cursorword",
     url = "https://github.com/echasnovski/mini.cursorword"
   },
   ["mini.hipatterns"] = {
     loaded = true,
-    path = "/home/kleefuchs/.local/share/nvim/site/pack/packer/start/mini.hipatterns",
+    path = "/home/matteo/.local/share/nvim/site/pack/packer/start/mini.hipatterns",
     url = "https://github.com/echasnovski/mini.hipatterns"
   },
   ["mini.jump"] = {
     loaded = true,
-    path = "/home/kleefuchs/.local/share/nvim/site/pack/packer/start/mini.jump",
+    path = "/home/matteo/.local/share/nvim/site/pack/packer/start/mini.jump",
     url = "https://github.com/echasnovski/mini.jump"
   },
   ["mini.notify"] = {
     loaded = true,
-    path = "/home/kleefuchs/.local/share/nvim/site/pack/packer/start/mini.notify",
+    path = "/home/matteo/.local/share/nvim/site/pack/packer/start/mini.notify",
     url = "https://github.com/echasnovski/mini.notify"
   },
   ["nvim-autopairs"] = {
@@ -204,7 +202,7 @@ _G.packer_plugins = {
   },
   ["nvim-colorizer.lua"] = {
     loaded = true,
-    path = "/home/kleefuchs/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua",
+    path = "/home/matteo/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua",
     url = "https://github.com/norcalli/nvim-colorizer.lua"
   },
   ["nvim-dap"] = {
@@ -249,7 +247,7 @@ _G.packer_plugins = {
   },
   ["nvim-web-devicons"] = {
     loaded = true,
-    path = "/home/kleefuchs/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
+    path = "/home/matteo/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/nvim-tree/nvim-web-devicons"
   },
   ["packer.nvim"] = {
@@ -269,7 +267,7 @@ _G.packer_plugins = {
   },
   ["prettier.nvim"] = {
     loaded = true,
-    path = "/home/kleefuchs/.local/share/nvim/site/pack/packer/start/prettier.nvim",
+    path = "/home/matteo/.local/share/nvim/site/pack/packer/start/prettier.nvim",
     url = "https://github.com/MunifTanjim/prettier.nvim"
   },
   rustaceanvim = {
@@ -289,7 +287,7 @@ _G.packer_plugins = {
   },
   ["vim-better-whitespace"] = {
     loaded = true,
-    path = "/home/kleefuchs/.local/share/nvim/site/pack/packer/start/vim-better-whitespace",
+    path = "/home/matteo/.local/share/nvim/site/pack/packer/start/vim-better-whitespace",
     url = "https://github.com/ntpeters/vim-better-whitespace"
   },
   ["vim-fugitive"] = {
@@ -299,7 +297,7 @@ _G.packer_plugins = {
   },
   ["vim-signify"] = {
     loaded = true,
-    path = "/home/kleefuchs/.local/share/nvim/site/pack/packer/start/vim-signify",
+    path = "/home/matteo/.local/share/nvim/site/pack/packer/start/vim-signify",
     url = "https://github.com/mhinz/vim-signify"
   },
   ["vim-suda"] = {
@@ -312,7 +310,7 @@ _G.packer_plugins = {
 time([[Defining packer_plugins]], false)
 -- Config for: alpha-nvim
 time([[Config for alpha-nvim]], true)
-try_loadstring("\27LJ\2\nï¿½\1\0\0\4\0\b\0\r6\0\0\0'\2\1\0B\0\2\0029\1\2\0'\2\4\0=\2\3\0016\1\0\0'\3\5\0B\1\2\0029\1\6\0019\3\a\0B\1\2\1K\0\1\0\vconfig\nsetup\nalpha\rdevicons\rprovider\15file_icons\26alpha.themes.startify\frequire\0", "config", "alpha-nvim")
+try_loadstring("\27LJ\2\n‰\1\0\0\4\0\b\0\r6\0\0\0'\2\1\0B\0\2\0029\1\2\0'\2\4\0=\2\3\0016\1\0\0'\3\5\0B\1\2\0029\1\6\0019\3\a\0B\1\2\1K\0\1\0\vconfig\nsetup\nalpha\rdevicons\rprovider\15file_icons\26alpha.themes.startify\frequire\0", "config", "alpha-nvim")
 time([[Config for alpha-nvim]], false)
 
 _G._packer.inside_compile = false

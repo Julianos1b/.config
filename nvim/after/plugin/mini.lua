@@ -23,7 +23,7 @@ vim.notify = notify.make_notify({
     INFO = { duration = 6000 },
 })
 
-vim.notify("Welcome to Kleefuch's neovim config!", vim.log.levels.INFO)
+vim.notify("Welcome to your Gay silly boykisser Neovim", vim.log.levels.INFO)
 
 
 local jump = require("mini.jump")
