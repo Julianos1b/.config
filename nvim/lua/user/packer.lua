@@ -116,7 +116,7 @@ return require('packer').startup(function(use)
             run = ':TSUpdate'
         },
         config = function()
-            require("treesitter").setup(require("configs.treesitter"))
+            require("nvim-treesitter.configs").setup(require("configs.treesitter"))
         end,
     }
 
@@ -164,14 +164,13 @@ return require('packer').startup(function(use)
             'html-lsp',
             'typescript-language-server',
             'emmet-language-server',
+            'java-test',
+            'jdtls',
         }
     }
 
-    use { --specific lsp plugins
-        "mfussenegger/nvim-jdtls",
-        requires = {
-            { "mfussenegger/nvim-dap" },
-        }
+    use {
+        "mfussenegger/nvim-jdtls", -- java lsp
     }
 
     use {
@@ -194,6 +193,14 @@ return require('packer').startup(function(use)
     }
 
     use {
+        'xzbdmw/colorful-menu.nvim',
+        config = function()
+            require("colorful-menu").setup(require("configs.colorful-menu"))
+        end,
+
+    }
+
+    use {
         'mfussenegger/nvim-dap',
         requires = {
             {'williamboman/mason.nvim'},
@@ -202,7 +209,8 @@ return require('packer').startup(function(use)
             {'nvim-neotest/nvim-nio'},
             {'rcarriga/nvim-dap-ui'},
             {'jonathan-elize/dap-info.nvim'},
-        }
+            {'Weissle/persistent-breakpoints.nvim'},
+        },
     }
 
     use {
@@ -247,7 +255,6 @@ return require('packer').startup(function(use)
 
     use ({
         "echasnovski/mini.hipatterns",
-        "echasnovski/mini.notify",
         "echasnovski/mini.jump",
         "echasnovski/mini.cursorword",
         "echasnovski/mini.clue",
