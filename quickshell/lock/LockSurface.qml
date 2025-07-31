@@ -8,12 +8,7 @@ Rectangle {
 	required property LockContext context
 	readonly property ColorGroup colors: Window.active ? palette.active : palette.inactive
 
-	color: colors.window
-
-	Button {
-		text: "Its not working, let me out"
-		onClicked: context.unlocked();
-	}
+	color: black
 
 	Label {
 		id: clock
@@ -22,12 +17,12 @@ Rectangle {
 		anchors {
 			horizontalCenter: parent.horizontalCenter
 			top: parent.top
-			topMargin: 100
+			topMargin: 200
 		}
 
 		// The native font renderer tends to look nicer at large sizes.
 		renderType: Text.NativeRendering
-		font.pointSize: 80
+		font.pointSize: 180
 
 		// updates the clock every second
 		Timer {
@@ -48,7 +43,7 @@ Rectangle {
 
 	ColumnLayout {
 		// Uncommenting this will make the password entry invisible except on the active monitor.
-		// visible: Window.active
+		visible: Window.active
 
 		anchors {
 			horizontalCenter: parent.horizontalCenter
@@ -59,8 +54,8 @@ Rectangle {
 			TextField {
 				id: passwordBox
 
-				implicitWidth: 400
-				padding: 10
+				implicitWidth: 1400
+				padding: 20
 
 				focus: true
 				enabled: !root.context.unlockInProgress
@@ -82,17 +77,6 @@ Rectangle {
 						passwordBox.text = root.context.currentText;
 					}
 				}
-			}
-
-			Button {
-				text: "Unlock"
-				padding: 10
-
-				// don't steal focus from the text box
-				focusPolicy: Qt.NoFocus
-
-				enabled: !root.context.unlockInProgress && root.context.currentText !== "";
-				onClicked: root.context.tryUnlock();
 			}
 		}
 
